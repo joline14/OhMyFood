@@ -1,0 +1,11 @@
+{
+  "name": "mon-projet",
+  "version": "1.0.0",
+  "description": "![Logo](Assets/images/logo/ohmyfood@2x.svg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SCSS/main.scss:./css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
