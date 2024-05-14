@@ -1,0 +1,56 @@
+/****** HEADER ***********/
+
+.header {
+  width: 100%;
+  flex-direction: column;
+
+  &__logo {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 4px 0px $shadow-color;
+
+    &-content {
+      width: 375px;
+      height: 100%;
+      padding-top: 8px;
+
+      img {
+        width: 43%;
+        height: auto;
+      }
+    }
+  }
+
+  &__searchBar {
+    width: 100%;
+    height: 50px;
+    gap: 17px;
+    background: $searchBar-bg-color;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    i.fa-location-dot {
+      width: 12px;
+      height: 16px;
+      color: $text-color;
+    }
+
+    input {
+      width: 109px;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      background-color: $searchBar-bg-color;
+      opacity: 1;
+
+      &::placeholder {
+        width: 100%;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

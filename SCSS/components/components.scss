@@ -1,25 +1,29 @@
 // Bouton Explore
-.btn-explore {
-  width: 218px;
-  height: 50px;
-  color: #ffffff;
-  border-radius: 25px;
-  @include box-shadow(0, 4, 10, rgba(0, 0, 0, 0.25));
-  border: none;
-  background: linear-gradient(to right, #ff79da, #9356dc);
-  font-size: 16px;
-  margin-top: 30px;
+.explore__content__btn {
+  margin-top: 5Opx;
+  button {
+    width: 218px;
+    height: 50px;
+    color: $body-bg-color;
+    margin-top: 30px;
+    border-radius: 25px;
+    @include btn-shadoow;
+    border: none;
+    background: $btn-gradient;
+    font-size: 16px;
+  }
 }
 
 // Restaurants card
-.restaurants-card {
+.restaurants__wrapper__block__container__card {
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   border-radius: 15px;
-  @include box-shadow(0, 4, 15, rgba(0, 0, 0, 0.1));
+  background-color: $body-bg-color;
+  @include card-shadow;
   position: relative;
   overflow: hidden;
-
   img {
     width: 100%;
     height: 175px;
@@ -28,16 +32,16 @@
   }
 }
 
-// Nouveauté badge
-.new {
+//Nouveauté badge
+.restaurants__wrapper__block__container__card__new {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: $vert-fonce;
-  background-color: $turquoise;
+  color: $new-text-color;
+  background: $new-bg-color;
   padding: 5px 10px;
   border-radius: 2px;
   font-weight: 500;
   font-size: 14px;
-  @include box-shadow(0, 2, 4, rgba(0, 0, 0, 0.15));
+  @include new-shadow;
 }

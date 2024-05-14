@@ -1,0 +1,11 @@
+@mixin btn-shadoow {
+  box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+@mixin card-shadow {
+  box-shadow: 0px 4px 15px 0px #0000001a;
+}
+
+@mixin new-shadow {
+  box-shadow: 0px 2px 4px 0px #00000026;
+}
