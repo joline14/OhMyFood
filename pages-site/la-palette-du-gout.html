@@ -56,51 +56,69 @@
 
             <div class="restaurant__wrapper">
                 <div class="restaurant__wrapper__title">
-                        <h1>La palette du goût</h1>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
+                    <h1>La palette du goût</h1>
+                    <input type="checkbox" id="alafrancaise-favorite" />
+                    <label for="alafrancaise-favorite" title="Ajoutez aux favoris" class="favorite__restaurants">
+                      <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
+                      <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite__selected" aria-hidden="true"></i>
+                    </label>
                 </div>
-                <div>  
+                <div class="sect_menu">  
                     <section class="menu entrees">
                         <div>
                             <h2 class="menu__title">ENTR&Eacute;ES</h2>
                         </div>
                         <div class="menu__restaurant">
+                            <input type="checkbox" id="entrees-1" class="menu-choice-checkbox" hidden />
                             <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
-                                        <h2>Fricassée d'escargots</h2>
-                                        <p>Au piment d'Espelette</p>
+                                <label for="entrees-1" class="menu__labels" title="Fricassée d'escargots"></label>
+                                <div class="menu__restaurant__content">
+                                    <div class="menu__restaurant__content__txt">
+                                      <h2>Fricassée d'escargots</h2>
+                                      <p>Au piment d'Espelette</p>
                                     </div>
-                                    <div class="menu__restaurant__choice__content__price">
-                                        25€
+                                    <div class="menu__restaurant__content__price">
+                                      25€
                                     </div>
+                                </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__restaurant">
+                            <input type="checkbox" id="entrees-2" class="menu-choice-checkbox" hidden />
                             <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
+                                <label for="entrees-2" class="menu__labels" title="Foie gras de canard mi-cuit"></label>
+                                <div class="menu__restaurant__content">
+                                    <div class="menu__restaurant__content__txt">
                                         <h2>Foie gras de canard mi-cuit</h2>
                                         <p>Et ses copeaux de truffe noire</p>
                                     </div>
-                                    <div class="menu__restaurant__choice__content__price">
-                                        35€
+                                    <div class="menu__restaurant__content__price">
+                                      35€
                                     </div>
+                                </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__restaurant">
+                            <input type="checkbox" id="entrees-3" class="menu-choice-checkbox" hidden />
                             <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
+                              <label for="entrees-3" class="menu__labels" title="Œuf au plat"></label>
+                                <div class="menu__restaurant__content">
+                                    <div class="menu__restaurant__content__txt">
                                         <h2>Œuf au plat</h2>
                                         <p>Assaisonné à la truffe sur lit de caviar</p>
                                     </div>
-                                    <div class="menu__restaurant__choice__content__price">
+                                    <div class="menu__restaurant__content__price">
                                         20€
                                     </div>
+                                </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
                                 </div>
                             </div>
                         </div>
@@ -111,86 +129,116 @@
                             <h2 class="menu__title">PLATS</h2>
                         </div>
                         <div class="menu__restaurant">
+                            <input type="checkbox" id="plats-1" class="menu-choice-checkbox" hidden />
                             <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
+                                <label for="plats-1" class="menu__labels" title="Filet de bœuf aux herbes"></label>
+                                <div class="menu__restaurant__content">
+                                    <div class="menu__restaurant__content__txt">
                                         <h2>Filet de bœuf aux herbes</h2>
                                         <p>Accompagné de sa ribambelle de légumes</p>
                                     </div>
-                                    <div class="menu__restaurant__choice__content__price">
+                                    <div class="menu__restaurant__content__price">
                                         40€
                                     </div>
                                 </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="menu__restaurant">
+                            <input type="checkbox" id="plats-2" class="menu-choice-checkbox" hidden />
                             <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
-                                    <h2>Parmentier de queue de bœuf</h2>
-                                    <p>À la truffe noire sur sa purée de panais</p>
+                                <label for="plats-2" class="menu__labels" title="Parmentier de queue de bœuf"></label>
+                                <div class="menu__restaurant__content">
+                                    <div class="menu__restaurant__content__txt">
+                                        <h2>Parmentier de queue de bœuf</h2>
+                                        <p>À la truffe noire sur sa purée de panais</p>
+                                    </div>
+                                    <div class="menu__restaurant__content__price">
+                                        35€
+                                    </div>
                                 </div>
-                                <div class="menu__restaurant__choice__content__price">
-                                    35€
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                     <div class="menu__restaurant">
-                        <div class="menu__restaurant__choice">
-                            <div class="menu__restaurant__choice__content">
-                                <div class="menu__restaurant__choice__content__txt">
-                                    <h2>Filet de turbot</h2>
-                                    <p>Aux agrumes</p>
-                                </div>
-                                <div class="menu__restaurant__choice__content__price">
-                                    35€
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
                                 </div>
                             </div>
                         </div>
-                      </div>
+                        <div class="menu__restaurant">
+                            <input type="checkbox" id="plats-3" class="menu-choice-checkbox" hidden />
+                            <div class="menu__restaurant__choice">
+                              <label for="plats-3" class="menu__labels" title="Filet de turbot"></label>
+                              <div class="menu__restaurant__content">
+                                <div class="menu__restaurant__content__txt">
+                                        <h2>Filet de turbot</h2>
+                                        <p>Aux agrumes</p>
+                                    </div>
+                                    <div class="menu__restaurant__content__price">
+                                        35€
+                                    </div>
+                                </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
                   </section>
 
-                  <section class="menu dessert">
+                  <section class="menu desserts">
                         <div>
-                            <h2 class="menu__title">D&Eacute;SSERT</h2>
+                            <h2 class="menu__title">DESSERT</h2>
                         </div>
                         <div class="menu__restaurant">
+                            <input type="checkbox" id="dessert-1" class="menu-choice-checkbox" hidden />
                             <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
+                              <label for="dessert-1" class="menu__labels" title="Paris-Brest"></label>
+                              <div class="menu__restaurant__content">
+                                <div class="menu__restaurant__content__txt">
                                         <h2>Paris-Brest</h2>
                                         <p>Revisité</p>
                                     </div>
-                                    <div class="menu__restaurant__choice__content__price">
+                                    <div class="menu__restaurant__content__price">
                                         18€
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="menu__restaurant">
-                            <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
-                                        <h2>Macaron au chocolat d'exception</h2>
-                                        <p>Et glace à la vanille de Madagascar</p>
-                                    </div>
-                                    <div class="menu__restaurant__choice__content__price">
-                                        22€
-                                    </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__restaurant">
+                            <input type="checkbox" id="dessert-2" class="menu-choice-checkbox" hidden />
                             <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
+                              <label for="dessert-2" class="menu__labels" title="Macaron au chocolat d'exception"></label>
+                              <div class="menu__restaurant__content">
+                                <div class="menu__restaurant__content__txt">
+                                        <h2>Macaron au chocolat d'exception</h2>
+                                        <p>Et glace à la vanille de Madagascar</p>
+                                    </div>
+                                    <div class="menu__restaurant__content__price">
+                                        22€
+                                    </div>
+                                </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__restaurant">
+                            <input type="checkbox" id="dessert-3" class="menu-choice-checkbox" hidden />
+                            <div class="menu__restaurant__choice">
+                              <label for="dessert-3" class="menu__labels" title="Mousse au chocolat"></label>
+                              <div class="menu__restaurant__content">
+                                <div class="menu__restaurant__content__txt">
                                         <h2>Mousse au chocolat</h2>
                                         <p>Au piment d'Espelette et à la truffe noire</p>
                                     </div>
-                                    <div class="menu__restaurant__choice__content__price">
+                                    <div class="menu__restaurant__content__price">
                                         23€
                                     </div>
+                                </div>
+                                <div class="menu__restaurant__selected">
+                                    <i class="fa-solid fa-circle-check"></i>
                                 </div>
                             </div>
                         </div>
@@ -210,10 +258,10 @@
          <a href="../index.html"><img src="../Assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood"></a>
         </div>
         <div class="footer__links">
-            <div class="footer__content">
+            <div class="footer__links__content link">
              <a><i class="fa-solid fa-utensils footer-icon "></i>Proposer un restaurant</a>
             </div>
-            <div class="footer__content">
+            <div class="footer__links__content link">
               <a><i class="fa-solid fa-handshake-angle footer-icon "></i>Devenir partenaire</a>
             </div>
             <div class="footer__content">

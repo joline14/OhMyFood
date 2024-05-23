@@ -10,7 +10,6 @@
   &__logo {
     img {
       width: 100px;
-      height: 27px;
       padding: 0px 1.42px 0px 0px;
       filter: brightness(0) invert(1);
     }
@@ -32,10 +31,29 @@
       margin-bottom: 7px;
       box-sizing: border-box;
 
-      i.footer__icon {
+      i {
         width: 11.92px;
         height: 13px;
         margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 812px) {
+  .footer {
+    height: auto;
+    align-items: flex-end;
+    padding: 30px 70px 30px 25px;
+    flex-direction: row-reverse;
+    gap: 16px;
+    &__links {
+      flex-direction: row;
+      width: 661px;
+      height: 20px;
+      gap: 7px;
+      .link {
+        width: 200px;
       }
     }
   }

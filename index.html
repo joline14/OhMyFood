@@ -12,10 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -42,255 +39,134 @@
       </div>
       <div class="header__searchBar Center">
         <i class="fa-solid fa-location-dot"></i>
-        <input
-          type="search"
-          name="barre de recherche"
-          placeholder="Paris, Belleville"
-        />
+        <input type="search" name="barre de recherche" placeholder="Paris, Belleville" />
       </div>
     </header>
 
     <!-- Main -->
     <main>
-      <section class="explore">
-        <div class="explore__content Center">
-          <div class="explore__content__title Center">
-            <h1>Réservez le menu qui vous convient</h1>
-          </div>
-          <div class="explore__content__subtitle">
-            <p>
-              Découvrez des restaurants d'exception, sélectionnés par nos soins.
-            </p>
-          </div>
-          <div class="explore__content__btn">
-            <button>Explorer nos restaurants</button>
-          </div>
+      <section class="explore Center">
+        <div class="explore__title Center">
+          <h1>Réservez le menu qui vous convient</h1>
+        </div>
+        <div class="explore__subtitle">
+          <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        </div>
+        <div class="explore__btn">
+          <button>Explorer nos restaurants</button>
         </div>
       </section>
 
       <!-- Fonctionnement -->
       <section class="fonctionnement">
-        <div class="fonctionnement__wrapper">
-          <div class="fonctionnement__wrapper__title">
-            <h1>Fonctionnement</h1>
+        <div class="fonctionnement__title">
+          <h1>Fonctionnement</h1>
+        </div>
+        <div class="fonctionnement__block">
+          <div class="fonctionnement__block__content">
+            <div class="fonctionnement__block__content__number Center">1</div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Choisissez un restaurant</p>
           </div>
-          <div class="fonctionnement__wrapper__block">
-            <div class="fonctionnement__wrapper__block__content">
-              <div
-                class="fonctionnement__wrapper__block__content__number Center"
-              >
-                1
-              </div>
-              <i
-                class="fa-solid fa-mobile-screen-button fonctionnement__wrapper__block__content__icon"
-              ></i>
-              <p>Choisissez un restaurant</p>
-            </div>
-            <div class="fonctionnement__wrapper__block__content">
-              <div
-                class="fonctionnement__wrapper__block__content__number Center"
-              >
-                2
-              </div>
-              <i
-                class="fa-solid fa-list fonctionnement__wrapper__block__content__icon"
-              ></i>
-              <p>Composez votre menu</p>
-            </div>
-            <div class="fonctionnement__wrapper__block__content">
-              <div
-                class="fonctionnement__wrapper__block__content__number Center"
-              >
-                3
-              </div>
-              <i
-                class="fa-sharp fa-solid fa-store fonctionnement__wrapper__block__content__icon"
-              ></i>
-              <p>Dégustez au restaurant</p>
-            </div>
+          <div class="fonctionnement__block__content">
+            <div class="fonctionnement__block__content__number Center">2</div>
+            <i class="fa-solid fa-list"></i>
+            <p>Composez votre menu</p>
+          </div>
+          <div class="fonctionnement__block__content">
+            <div class="fonctionnement__block__content__number Center">3</div>
+            <i class="fa-sharp fa-solid fa-store"></i>
+            <p>Dégustez au restaurant</p>
           </div>
         </div>
       </section>
 
       <!-- Restaurants -->
-      <section class="sect_restaurants">
-        <div class="restaurants">
-          <div class="restaurants__title">
-            <h2>Restaurants</h2>
+      <section class="restaurants">
+        <div class="restaurants__title">
+          <h2>Restaurants</h2>
+        </div>
+        <div class="restaurants__wrapper">
+          <div class="restaurants__block">
+            <article class="restaurants__block__card">
+              <a href="./pages-site/la-palette-du-gout.html" title="La note enchantée">
+                <img src="./Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
+                <span class="restaurants__block__card__new">Nouveau</span>
+              </a>
+              <div class="restaurants__block__content">
+                <a href="./pages-site/la-palette-du-gout.html" title="La note enchantée">
+                  <div class="restaurants__block__content__text">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                  </div>
+                </a>
+                <input type="checkbox" id="la-palette-du-goût" />
+                <label for="la-palette-du-goût" title="Ajoutez aux favoris" class="favorite__restaurants">
+                  <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
+                  <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite__selected" aria-hidden="true"></i>
+                </label>
+              </div>
+            </article>
+            <article class="restaurants__block__card">
+              <a href="./pages-site/La-note-enchantée.html" title="La note enchantée">
+                <img src="./Assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
+                <span class="restaurants__block__card__new">Nouveau</span>
+              </a>
+              <div class="restaurants__block__content">
+                <a href="./pages-site/La-note-enchantée.html" title="La note enchantée">
+                  <div class="restaurants__block__content__text">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                  </div>
+                </a>
+                <input type="checkbox" id="la-note-enchantee" />
+                <label for="la-note-enchantee" title="Ajoutez aux favoris" class="favorite__restaurants">
+                  <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
+                  <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite__selected" aria-hidden="true"></i>
+                </label>
+              </div>
+            </article>
           </div>
-          <div class="restaurants__wrapper">
-            <div class="restaurants__wrapper__block">
-              <div class="restaurants__wrapper__block__container">
-                <article class="restaurants__wrapper__block__container__card">
-                  <a
-                    href="./pages-site/la-palette-du-gout.html"
-                    title="La note enchantée"
-                  >
-                    <img
-                      src="./Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                      alt="La palette du goût"
-                    />
-                    <span
-                      class="restaurants__wrapper__block__container__card__new"
-                      >Nouveau</span
-                    >
-                  </a>
-                  <div
-                    class="restaurants__wrapper__block__container__card__content"
-                  >
-                    <a
-                      href="./pages-site/la-palette-du-gout.html"
-                      title="La note enchantée"
-                    >
-                      <div
-                        class="restaurants__wrapper__block__container__card__content__text"
-                      >
-                        <h3
-                          class="restaurants__wrapper__block__container__card__content__text-nom"
-                        >
-                          La palette du goût
-                        </h3>
-                        <p
-                          class="restaurants__wrapper__block__container__card__content__text-localisation"
-                        >
-                          Ménilmontant
-                        </p>
-                      </div>
-                    </a>
-                    <div class="container__card__content-favorite">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </div>
+          <div class="restaurants__block">
+            <article class="restaurants__block__card">
+              <a href="./pages-site/A-la-française.html" title=" Restaurants À la française">
+                <img src="./Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française à Cité Rouge" />
+              </a>
+              <div class="restaurants__block__content">
+                <a href="./pages-site/A-la-française.html" title=" Restaurants À la française">
+                  <div class="restaurants__block__content__text">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
                   </div>
-                </article>
+                </a>
+                <input type="checkbox" id="alafrancaise-favorite" />
+                <label for="alafrancaise-favorite" title="Ajoutez aux favoris" class="favorite__restaurants">
+                  <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
+                  <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite__selected" aria-hidden="true"></i>
+                </label>
               </div>
-              <div class="restaurants__wrapper__block__container">
-                <article class="restaurants__wrapper__block__container__card">
-                  <a
-                    href="./pages-site/La-note-enchantée.html"
-                    title="La note enchantée"
-                  >
-                    <img
-                      src="./Assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                      alt="La note enchantée à Charonne"
-                    />
-                    <span
-                      class="restaurants__wrapper__block__container__card__new"
-                      >Nouveau</span
-                    >
-                  </a>
-                  <div
-                    class="restaurants__wrapper__block__container__card__content"
-                  >
-                    <a
-                      href="./pages-site/La-note-enchantée.html"
-                      title="La note enchantée"
-                    >
-                      <div
-                        class="restaurants__wrapper__block__container__card__content__text"
-                      >
-                        <h3
-                          class="restaurants__wrapper__block__container__card__content__text-nom"
-                        >
-                          La note enchantée
-                        </h3>
-                        <p
-                          class="restaurants__wrapper__block__container__card__content__text-localisation"
-                        >
-                          Charonne
-                        </p>
-                      </div>
-                    </a>
-                    <div class="restaurants__card-favorite">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </div>
+            </article>
+            <article class="restaurants__block__card">
+              <a href="./pages-site/le-delice-des-sens.html" title=" Restaurants Le délice des sens">
+                <img
+                  src="./Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="Le délice des sens à Folie-Méricourt"
+                />
+              </a>
+              <div class="restaurants__block__content">
+                <a href="./pages-site/le-delice-des-sens.html" title=" Restaurants Le délice des sens">
+                  <div class="restaurants__block__content__text">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
                   </div>
-                </article>
+                </a>
+                <input type="checkbox" id="le-délice-des-sens" />
+                <label for="le-délice-des-sens" title="Ajoutez aux favoris" class="favorite__restaurants">
+                  <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
+                  <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite__selected" aria-hidden="true"></i>
+                </label>
               </div>
-            </div>
-            <div class="restaurants__wrapper__block">
-              <div class="restaurants__wrapper__block__container">
-                <article class="restaurants__wrapper__block__container__card">
-                  <a
-                    href="./pages-site/A-la-française.html"
-                    title=" Restaurants À la française"
-                  >
-                    <img
-                      src="./Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                      alt="À la française à Cité Rouge"
-                    />
-                  </a>
-                  <div
-                    class="restaurants__wrapper__block__container__card__content"
-                  >
-                    <a
-                      href="./pages-site/A-la-française.html"
-                      title=" Restaurants À la française"
-                    >
-                      <div
-                        class="restaurants__wrapper__block__container__card__content__text"
-                      >
-                        <h3
-                          class="restaurants__wrapper__block__container__card__content__text-nom"
-                        >
-                          À la française
-                        </h3>
-                        <p
-                          class="restaurants__wrapper__block__container__card__content__text-localisation"
-                        >
-                          Cité Rouge
-                        </p>
-                      </div>
-                    </a>
-                    <div class="restaurants__card-favorite">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="restaurants__wrapper__block__container">
-                <article class="restaurants__wrapper__block__container__card">
-                  <a
-                    href="./pages-site/le-delice-des-sens.html"
-                    title=" Restaurants Le délice des sens"
-                  >
-                    <img
-                      src="./Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                      alt="Le délice des sens à Folie-Méricourt"
-                    />
-                  </a>
-                  <div
-                    class="restaurants__wrapper__block__container__card__content"
-                  >
-                    <a
-                      href="./pages-site/le-delice-des-sens.html"
-                      title=" Restaurants Le délice des sens"
-                    >
-                      <div
-                        class="restaurants__wrapper__block__container__card__content__text"
-                      >
-                        <h3
-                          class="restaurants__wrapper__block__container__card__content__text-nom"
-                        >
-                          Le délice des sens
-                        </h3>
-                        <p
-                          class="restaurants__wrapper__block__container__card__content__text-localisation"
-                        >
-                          Folie-Méricourt
-                        </p>
-                      </div>
-                    </a>
-                    <div class="restaurants__card-favorite">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -300,29 +176,19 @@
     <footer>
       <div class="footer">
         <div class="footer__logo">
-          <a href="index.html"
-            ><img
-              src="./Assets/images/logo/ohmyfood@2x.svg"
-              alt="Logo OhMyFood"
-          /></a>
+          <a href="index.html"><img src="./Assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood" /></a>
         </div>
         <div class="footer__links">
-          <div class="footer__content">
-            <a
-              ><i class="fa-solid fa-utensils footer__icon"></i>Proposer un
-              restaurant</a
-            >
+          <div class="footer__links__content link">
+            <a><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</a>
           </div>
-          <div class="footer__content">
-            <a
-              ><i class="fa-solid fa-handshake-angle footer__icon"></i>Devenir
-              partenaire</a
-            >
+          <div class="footer__links__content link">
+            <a><i class="fa-solid fa-handshake-angle footer__icon"></i>Devenir partenaire</a>
           </div>
-          <div class="footer__content">
+          <div class="footer__links__content">
             <a>Mentions légales</a>
           </div>
-          <div class="footer__content">
+          <div class="footer__links__content">
             <a href="mailto:contact@ofmyfood.com">Contact</a>
           </div>
         </div>

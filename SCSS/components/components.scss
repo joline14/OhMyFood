@@ -1,6 +1,6 @@
 // Bouton Explore
-.explore__content__btn {
-  margin-top: 5Opx;
+.explore__btn {
+  margin-top: 30px;
   button {
     width: 218px;
     height: 50px;
@@ -11,13 +11,16 @@
     border: none;
     background: $btn-gradient;
     font-size: 16px;
+    &:hover {
+      opacity: 0.85;
+      box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.25);
+    }
   }
 }
 
 // Restaurants card
-.restaurants__wrapper__block__container__card {
+.restaurants__block__card {
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
   border-radius: 15px;
   background-color: $body-bg-color;
@@ -33,7 +36,7 @@
 }
 
 //Nouveauté badge
-.restaurants__wrapper__block__container__card__new {
+.restaurants__block__card__new {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -44,4 +47,122 @@
   font-weight: 500;
   font-size: 14px;
   @include new-shadow;
+}
+
+//COEUR animation//
+.favorite__selected {
+  @include favorite__selected;
+  animation: fav 1s 1;
+}
+
+.favorite__restaurants {
+  margin-right: 7.03%;
+}
+
+.unfilled-heart {
+  cursor: pointer;
+}
+
+/*unfilled-heart */
+input[type="checkbox"]:not(:checked) ~ .favorite__restaurants .unfilled-heart {
+  display: block;
+}
+
+/* filled-heart */
+input[type="checkbox"]:not(:checked) ~ .favorite__restaurants .filled-heart {
+  display: none;
+}
+
+/* Styles when the checkbox is checked */
+input[type="checkbox"]:checked ~ .favorite__restaurants .unfilled-heart {
+  display: none;
+}
+
+/* Styles when the checkbox is checked */
+input[type="checkbox"]:checked ~ .favorite__restaurants .filled-heart {
+  display: block;
+}
+
+@keyframes fav {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.25);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  20% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  30% {
+    transform: scale(1.4);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  40% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  60% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  70% {
+    transform: scale(1.4);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  80% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  90% {
+    transform: scale(1.25);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Configuration initiale de l'icône cachée */
+
+.menu__labels {
+  position: absolute;
+  height: 72px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu__restaurant__selected {
+  position: relative;
+  height: 100%;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  border-radius: 0 20% 20% 0;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+
+.fa-circle-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  resize: 25px;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu__restaurant__choice .menu__restaurant__selected {
+  width: 68px;
+  right: 0;
 }

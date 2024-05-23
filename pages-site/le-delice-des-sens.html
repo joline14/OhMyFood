@@ -12,10 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -27,202 +24,232 @@
   </head>
 
   <body>
-        <div id="loader" class="loader-wrapper">
-            <div class="spinner"></div>
+    <div id="loader" class="loader-wrapper">
+      <div class="spinner"></div>
+    </div>
+    <!-- Header -->
+    <header class="header_page">
+      <div class="header__page__fleche">
+        <a href="./../index.html" title="Retourner à la page précédente">
+          <i class="fa-solid fa-arrow-left arrow"></i>
+        </a>
+      </div>
+      <div class="header__page__logo">
+        <a href="../index.html">
+          <div class="header__page__logo__content">
+            <img src="../Assets/images/logo/ohmyfood.png" alt="Logo OhMyFood" />
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="restaurant">
+        <div class="restaurant__image">
+          <img src="../Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Le délice des sens à Folie-Méricourt" />
         </div>
-        <!-- Header -->
-        <header class="header_page">  
-            <div class="header__page__fleche">
-                <a href="./../index.html" title="Retourner à la page précédente">
-                    <i class="fa-solid fa-arrow-left arrow"></i>
-                </a>
-            </div>
-            <div class="header__page__logo">
-                <a href="../index.html">
-                  <div class="header__page__logo__content">
-                    <img src="../Assets/images/logo/ohmyfood.png" alt="Logo OhMyFood" />
+
+        <div class="restaurant__wrapper">
+          <div class="restaurant__wrapper__title">
+            <h1>Le délice des sens</h1>
+            <input type="checkbox" id="alafrancaise-favorite" />
+            <label for="alafrancaise-favorite" title="Ajoutez aux favoris" class="favorite__restaurants">
+              <i class="fa-regular fa-heart heart page-heart unfilled-heart" aria-hidden="true"></i>
+              <i class="fa-solid fa-regular fa-heart heart page-heart filled-heart favorite__selected" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="sect_menu">
+            <section class="menu entrees">
+              <div>
+                <h2 class="menu__title">ENTR&Eacute;ES</h2>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="entrees-1" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="entrees-1" class="menu__labels" title="Tartare de thon"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Tartare de thon</h2>
+                      <p>Assaisonné au yuzu</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">25€</div>
                   </div>
-                </a>
-           </div>
-        </header>
-
-        <!-- Main -->
-        <main>
-            <div class="restaurant">
-                <div class="restaurant__image">
-                    <img src="../Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Le délice des sens à Folie-Méricourt"/>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
                 </div>
-
-                <div class="restaurant__wrapper">
-                    <div class="restaurant__wrapper__title">
-                            <h1>Le délice des sens</h1>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="entrees-2" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="entrees-2" class="menu__labels" title="Bouchée de homard croustillant"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Bouchée de homard croustillant</h2>
+                      <p>Et sa farandole de petits légumes</p>
                     </div>
-                    <div class="menu">  
-                        <section class="menu entrees">
-                            <div>
-                                <h2 class="menu__title">ENTR&Eacute;ES</h2>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                            <h2>Tartare de thon</h2>
-                                            <p>Assaisonné au yuzu</p>
-                                        </div>
-                                        <div class="menu__restaurant__choice__content__price">
-                                            25€
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                            <h2>Bouchée de homard croustillant</h2>
-                                            <p>Et sa farandole de petits légumes</p>
-                                        </div>
-                                        <div class="menu__restaurant__choice__content__price">
-                                            35€
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                            <h2>Velouté de cèpes</h2>
-                                            <p>Aux truffes</p>
-                                        </div>
-                                        <div class="menu__restaurant__choice__content__price">
-                                            20€
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    
-                        <section class="menu plats">
-                            <div>
-                                <h2 class="menu__title">PLATS</h2>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                            <h2>Poulet rôti aux herbes de Provence</h2>
-                                            <p>Et sa crème de truffe</p>
-                                        </div>
-                                        <div class="menu__restaurant__choice__content__price">
-                                            40€
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                        <h2>Langouste rôtie</h2>
-                                        <p>Et ses légumes de saison</p>
-                                    </div>
-                                    <div class="menu__restaurant__choice__content__price">
-                                        35€
-                                    </div>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="menu__restaurant">
-                            <div class="menu__restaurant__choice">
-                                <div class="menu__restaurant__choice__content">
-                                    <div class="menu__restaurant__choice__content__txt">
-                                        <h2>Côte de bœuf Angus </h2>
-                                        <p>Et sa purée de panais</p>
-                                    </div>
-                                    <div class="menu__restaurant__choice__content__price">
-                                        44€
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                      </section>
-
-                      <section class="menu dessert">
-                            <div>
-                                <h2 class="menu__title">D&Eacute;SSERT</h2>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                            <h2>Farandole de desserts</h2>
-                                            <p>Du chef</p>
-                                        </div>
-                                        <div class="menu__restaurant__choice__content__price">
-                                            18€
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                            <h2>Crème brulée</h2>
-                                            <p>Revisitée</p>
-                                        </div>
-                                        <div class="menu__restaurant__choice__content__price">
-                                            22€
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu__restaurant">
-                                <div class="menu__restaurant__choice">
-                                    <div class="menu__restaurant__choice__content">
-                                        <div class="menu__restaurant__choice__content__txt">
-                                            <h2>Tiramisu</h2>
-                                            <p>À la noisette</p>
-                                        </div>
-                                        <div class="menu__restaurant__choice__content__price">
-                                            23€
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="restaurant__wrapper__btn">
-                            <button>Commander</button>
-                        </div>
-                   </div>
+                    <div class="menu__restaurant__content__price">35€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
                 </div>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="entrees-3" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="entrees-3" class="menu__labels" title="Velouté de cèpes"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Velouté de cèpes</h2>
+                      <p>Aux truffes</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">20€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="menu plats">
+              <div>
+                <h2 class="menu__title">PLATS</h2>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="plats-1" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="plats-1" class="menu__labels" title="Poulet rôti aux herbes de Provence"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Poulet rôti aux herbes de Provence</h2>
+                      <p>Et sa crème de truffe</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">40€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="plats-2" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="plats-2" class="menu__labels" title="Langouste rôtie"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Langouste rôtie</h2>
+                      <p>Et ses légumes de saison</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">35€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="plats-3" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="plats-3" class="menu__labels" title="Côte de bœuf Angus"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Côte de bœuf Angus</h2>
+                      <p>Et sa purée de panais</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">44€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="menu desserts">
+              <div>
+                <h2 class="menu__title">DESSERT</h2>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="dessert-1" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="dessert-1" class="menu__labels" title="Farandole de desserts"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Farandole de desserts</h2>
+                      <p>Du chef</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">18€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="dessert-2" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="dessert-2" class="menu__labels" title="Crème brulée"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Crème brulée</h2>
+                      <p>Revisitée</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">22€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__restaurant">
+                <input type="checkbox" id="dessert-3" class="menu-choice-checkbox" hidden />
+                <div class="menu__restaurant__choice">
+                  <label for="dessert-3" class="menu__labels" title="Tiramisu"></label>
+                  <div class="menu__restaurant__content">
+                    <div class="menu__restaurant__content__txt">
+                      <h2>Tiramisu</h2>
+                      <p>À la noisette</p>
+                    </div>
+                    <div class="menu__restaurant__content__price">23€</div>
+                  </div>
+                  <div class="menu__restaurant__selected">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="restaurant__wrapper__btn">
+              <button>Commander</button>
             </div>
-        </main>
+          </div>
+        </div>
+      </div>
+    </main>
 
-        <!--footer-->
-        <footer>
-            <div class="footer">
-                <div class="footer__logo">
-                 <a href="../index.html"><img src="../Assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood"></a>
-                </div>
-                <div class="footer__links">
-                    <div class="footer__content">
-                     <a><i class="fa-solid fa-utensils footer-icon "></i>Proposer un restaurant</a>
-                    </div>
-                    <div class="footer__content">
-                      <a><i class="fa-solid fa-handshake-angle footer-icon "></i>Devenir partenaire</a>
-                    </div>
-                    <div class="footer__content">
-                      <a>Mentions légales</a>
-                    </div>
-                    <div class="footer__content">
-                      <a href="mailto:contact@ofmyfood.com">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
-</html
+    <!--footer-->
+    <footer>
+      <div class="footer">
+        <div class="footer__logo">
+          <a href="../index.html"><img src="../Assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood" /></a>
+        </div>
+        <div class="footer__links">
+          <div class="footer__links__content link">
+            <a><i class="fa-solid fa-utensils footer-icon"></i>Proposer un restaurant</a>
+          </div>
+          <div class="footer__links__content link">
+            <a><i class="fa-solid fa-handshake-angle footer-icon"></i>Devenir partenaire</a>
+          </div>
+          <div class="footer__content">
+            <a>Mentions légales</a>
+          </div>
+          <div class="footer__content">
+            <a href="mailto:contact@ofmyfood.com">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
