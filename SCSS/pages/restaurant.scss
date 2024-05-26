@@ -3,9 +3,6 @@
 /** Header **/
 .header__page {
   height: 63px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &__fleche {
     position: absolute;
@@ -13,9 +10,6 @@
     height: 30px;
     top: 17px;
     left: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   &__logo {
     width: 100%;
@@ -26,9 +20,6 @@
     &__content {
       width: 375px;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       padding-top: 8px;
 
       img {
@@ -52,7 +43,6 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      -o-object-fit: cover;
       object-fit: cover;
       display: block;
       max-width: 100%;
@@ -207,36 +197,6 @@
   }
 }
 
-//apparition des carte//
-@keyframes FadeIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.entrees {
-  animation: FadeIn 1.2s;
-  animation-delay: 1.6s;
-  transform: scale(0);
-  animation-fill-mode: forwards;
-}
-.plats {
-  animation: FadeIn 1.2s;
-  animation-delay: 2s;
-  transform: scale(0);
-  animation-fill-mode: forwards;
-}
-
-.desserts {
-  animation: FadeIn 1.2s;
-  animation-delay: 2.4s;
-  transform: scale(0);
-  animation-fill-mode: forwards;
-}
-
 /* Media Queries pour Desktop */
 
 @media (min-width: 768px) {
@@ -261,7 +221,6 @@
   .restaurant__wrapper__title {
     width: 100%;
     height: 41px;
-    display: flex;
     justify-content: center;
     column-gap: 24px;
   }
