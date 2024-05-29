@@ -1,11 +1,9 @@
 /* Styles de base pour le loader-wrapper */
 .loader-wrapper {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
+  background-color: $sniper-bg-color;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +17,11 @@
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border-top-color: #333;
-  animation: spin 1s linear infinite; /* Durée de rotation du spinner */
+  animation: spinner 1s linear infinite;
 }
 
 /* Animation du spinner */
-@keyframes spin {
+@keyframes spinner {
   0% {
     transform: rotate(0deg);
   }
@@ -33,7 +31,7 @@
 }
 
 /* Animation pour faire disparaître le loader */
-@keyframes fadeOut {
+@keyframes spinOut {
   100% {
     opacity: 0;
     visibility: hidden;
@@ -42,5 +40,5 @@
 
 /* Appliquer l'animation de disparition */
 .loader-wrapper {
-  animation: fadeOut 1s ease-in-out 1s forwards; /* Temps total réduit à 2 secondes */
+  animation: spinOut 1s ease-in-out 1s forwards;
 }

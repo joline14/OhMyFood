@@ -41,7 +41,7 @@ input {
 }
 
 .heart {
-  font-size: 22px;
+  font-size: 27px;
 }
 
 .unfilled-heart {
@@ -99,7 +99,7 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: simpleScale 1s ease-in-out;
+  animation: heartScale 1s ease-in-out;
 }
 
 .favorite__restaurants {
@@ -126,7 +126,7 @@ input[type=checkbox]:checked ~ .favorite__restaurants .filled-heart {
   display: block;
 }
 
-@keyframes simpleScale {
+@keyframes heartScale {
   0%, 100% {
     transform: scale(1);
   }
@@ -134,7 +134,7 @@ input[type=checkbox]:checked ~ .favorite__restaurants .filled-heart {
     transform: scale(1.1);
   }
 }
-@keyframes FadeIn {
+@keyframes menu {
   0% {
     transform: scale(0);
   }
@@ -143,21 +143,21 @@ input[type=checkbox]:checked ~ .favorite__restaurants .filled-heart {
   }
 }
 .entrees {
-  animation: FadeIn 1.2s;
+  animation: menu 1.2s;
   animation-delay: 1.6s;
   transform: scale(0);
   animation-fill-mode: forwards;
 }
 
 .plats {
-  animation: FadeIn 1.2s;
+  animation: menu 1.2s;
   animation-delay: 2s;
   transform: scale(0);
   animation-fill-mode: forwards;
 }
 
 .desserts {
-  animation: FadeIn 1.2s;
+  animation: menu 1.2s;
   animation-delay: 2.4s;
   transform: scale(0);
   animation-fill-mode: forwards;
@@ -321,11 +321,9 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
 /* Styles de base pour le loader-wrapper */
 .loader-wrapper {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,11 +337,11 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border-top-color: #333;
-  animation: spin 1s linear infinite; /* Durée de rotation du spinner */
+  animation: spinner 1s linear infinite;
 }
 
 /* Animation du spinner */
-@keyframes spin {
+@keyframes spinner {
   0% {
     transform: rotate(0deg);
   }
@@ -352,7 +350,7 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
   }
 }
 /* Animation pour faire disparaître le loader */
-@keyframes fadeOut {
+@keyframes spinOut {
   100% {
     opacity: 0;
     visibility: hidden;
@@ -360,7 +358,7 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
 }
 /* Appliquer l'animation de disparition */
 .loader-wrapper {
-  animation: fadeOut 1s ease-in-out 1s forwards; /* Temps total réduit à 2 secondes */
+  animation: spinOut 1s ease-in-out 1s forwards;
 }
 
 /**** Main ****/
@@ -498,7 +496,7 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
   text-align: left;
 }
 
-/* Media Queries pour Desktop */
+/* Media Queries */
 @media (min-width: 768px) {
   .explore__title {
     transform: translateX(12px);
@@ -534,7 +532,7 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
   .fonctionnement {
     padding: 4% 7%;
   }
-  .fonctionnement .fonctionnement__block {
+  .fonctionnement__block {
     width: 95%;
   }
   .restaurants {
@@ -720,15 +718,8 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
   box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* Media Queries pour Desktop */
+/* Media Queries */
 @media (min-width: 768px) {
-  .restaurant__image {
-    padding-bottom: 396px;
-    overflow: hidden;
-  }
-  .restaurant__image img {
-    height: 383px;
-  }
   .restaurant__wrapper {
     padding-bottom: 40px;
     max-width: 1055px;
@@ -743,13 +734,20 @@ input[type=checkbox]:checked ~ .menu__restaurant__choice .menu__restaurant__sele
     justify-content: center;
     column-gap: 24px;
   }
-  .sect_menu {
+  .restaurant__wrapper .restaurant__image {
+    padding-bottom: 396px;
+    overflow: hidden;
+  }
+  .restaurant__wrapper .restaurant__image img {
+    height: 383px;
+  }
+  .restaurant__wrapper .sect_menu {
     width: 634px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .menu {
+  .restaurant__wrapper .sect_menu .menu {
     margin: 0 0 40px 0;
     width: 100%;
   }

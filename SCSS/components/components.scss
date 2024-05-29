@@ -51,7 +51,7 @@
 //COEUR animation//
 .favorite__selected {
   @include favorite__selected;
-  animation: simpleScale 1s ease-in-out;
+  animation: heartScale 1s ease-in-out;
 }
 
 .favorite__restaurants {
@@ -78,7 +78,7 @@ input[type="checkbox"]:checked ~ .favorite__restaurants .filled-heart {
   display: block;
 }
 
-@keyframes simpleScale {
+@keyframes heartScale {
   0%,
   100% {
     transform: scale(1); // Commence et termine à la taille normale
@@ -89,7 +89,7 @@ input[type="checkbox"]:checked ~ .favorite__restaurants .filled-heart {
 }
 
 //apparition des carte//
-@keyframes FadeIn {
+@keyframes menu {
   0% {
     transform: scale(0);
   }
@@ -99,20 +99,20 @@ input[type="checkbox"]:checked ~ .favorite__restaurants .filled-heart {
 }
 
 .entrees {
-  animation: FadeIn 1.2s;
+  animation: menu 1.2s;
   animation-delay: 1.6s;
   transform: scale(0);
   animation-fill-mode: forwards;
 }
 .plats {
-  animation: FadeIn 1.2s;
+  animation: menu 1.2s;
   animation-delay: 2s;
   transform: scale(0);
   animation-fill-mode: forwards;
 }
 
 .desserts {
-  animation: FadeIn 1.2s;
+  animation: menu 1.2s;
   animation-delay: 2.4s;
   transform: scale(0);
   animation-fill-mode: forwards;
