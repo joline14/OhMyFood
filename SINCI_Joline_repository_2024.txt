@@ -1,1 +1,7 @@
+Le lien vers votre repository GitHub:
 https://github.com/joline14/OhMyFood.git
+
+
+Le lien de la version en ligne de votre site Internet: 
+https://joline14.github.io/OhMyFood/
+
